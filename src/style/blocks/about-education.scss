@@ -1,0 +1,65 @@
+.education {
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .box {
+      flex: 1 1 40rem;
+      margin-left: 2rem;
+      padding-top: 0;
+      padding-left: 3.5rem;
+      padding-bottom: 3rem;
+      border-left: 0.1rem solid $white;
+      position: relative;
+
+      &:hover {
+        i {
+          transform: scale(1.1);
+        }
+        span {
+          color: $cri;
+        }
+        h3 {
+          font-weight: bold;
+        }
+      }
+
+      i {
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.5rem;
+        font-size: 1.7rem;
+        border-radius: 50%;
+        background: $cri;
+        color: $white;
+        text-align: center;
+        position: absolute;
+        top: -1rem;
+        left: -2.5rem;
+        transition: 0.4s linear;
+      }
+
+      span {
+        font-size: 1.7rem;
+        color: $white;
+        border-radius: 5rem;
+        padding: 0.5rem 1.5rem;
+        background: $light-bg;
+        transition: 0.4s linear;
+      }
+      h3 {
+        font-size: 2rem;
+        padding: 1rem 0;
+        color: $white;
+        padding-top: 3rem;
+        font-weight: normal;
+        transition: 048s linear;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $light-color;
+        line-height: 2;
+      }
+    }
+  }
+}
